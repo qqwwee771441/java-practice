@@ -1,0 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.util.Date" %>
+<%@ page import="java.time.LocalDate" %>
+<%@ page import="java.time.LocalDateTime" %>
+<%@ page import="java.text.SimpleDateFormat" %>
+<%
+	Date todayD = new Date();
+	LocalDate todayLD = LocalDate.now();
+	LocalDateTime todayLDT = LocalDateTime.now();
+	SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+	String todayStr = dateFormat.format(todayD);
+%>
+    

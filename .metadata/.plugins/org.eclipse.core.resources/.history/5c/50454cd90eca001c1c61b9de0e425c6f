@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"
+    errorPage = "IsErrorPage.jsp" 
+    trimDirectiveWhitespaces="true"%>    
+<%@ include file="IncludeFile.jsp" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HelloJSP</title>
+</head>
+<body>
+	<h2>JSP Test</h2>
+	<p>
+		<%
+			out.println("오늘 날짜 : " + today);
+			out.println("<br/>");
+			out.println("어제 날짜 : " + yesterday);
+			out.println("<br/>");
+			out.println("내일 날짜 : " + tomorrow);
+		%>
+	</p>
+</body>
+</html>
